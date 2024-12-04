@@ -1,33 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Judith’s Card</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lebenslauf - Content Manager</title>
     <style>
-      /* Styling */
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Open Sans', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(90deg, #202c47, #5285b8);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            font-family: 'League Spartan', 'Arial Black', sans-serif;
+        }
+        header p {
+            margin: 5px 0;
+            font-size: 0.7 rem;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #202c47;
+            border-bottom: 2px solid #5285b8;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            font-size: 1.8rem;
+            font-family: 'League Spartan', 'Arial Black', sans-serif;
+        }
+        ul { 
+            list-style: disc; 
+            padding-left: 20px; 
+            margin-bottom: 0; 
+            line-height: 1.4; }
+        
+        ul li {
+            margin-bottom: 15px;
+        }
+        ul li strong {
+            display: block;
+            font-size: 1.1rem;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: #f4f4f4;
+            font-size: 0.9rem;
+            color: #666;
+        }
     </style>
-  </head>
-  </head>
-  <body> 
+</head>
+<body>
     <header>
-      <h1>Judith Kapfer</h1>
+        <h1>Judith Kapfer, MA</h1>
+        <p>Content- & Communitymanager | Graz, Austria | judith.kapfer@gmx.at</p>
     </header>
-    <main>
-      <section aria-labelledby="bio-heading">
-        <h2 id="bio-heading">Bio</h2>
-        <p>@@About Me@@</p>
-      </section>
-      <section aria-labelledby="hobbies-heading">
-        <h2 id="hobbies-heading">Hobbies</h2>
-        @@My Hobbies@@
-      </section>
-      <section aria-labelledby="workxp-heading">
-        <h2 id="workxp-heading">Work Experience</h2>
-        @@My Work Experience@@
-      </section>
-    </main>
-    <script>
-      /* Scripting */
-    </script>
-  </body>
+    <div class="container">
+        <section id="about">
+            <h2>About me</h2>
+            <p>Creative content manager with experience in developing social media content and advertising strategies. Currently working in the fundraising sector with the goal of reaching the right organizations and supporting them in achieving their mission.</p>
+        </section>
+        <section id="experience">
+            <h2>Relevant Experience</h2>
+            <p>
+                    <strong>Content- & Communitymanager</strong>
+                    <span>DADI EDV GmbH, Graz (since 03/2024)</span>
+                    <p>Responsible for communication via website, newsletters, social media channels, as well as creating tutorials and various offline marketing materials.</p>
+            </p>    
+            <p>
+                    <strong>Senior Social Media Project Manager</strong>
+                    <span>Hi Performer GmbH, Graz (2021 - 2024)</span>
+                    <p>Developing content strategies for various industries and conducting workshops on social media advertising.</p>
+            </p>
+            </ul>
+        </section>
+        <section id="education">
+            <h2>Education</h2>
+            <p>
+                    <strong>Master of Arts in HRM & Labour Law</strong>
+                    <span>FH Burgenland, Eisenstadt (2015 - 2017)</span>
+            </p>    
+            <p>   
+                    <strong>Bachelor of Science in Business Administration</strong>
+                    <span>KF University, Graz (2012 - 2015)</span>
+            </p>    
+        </section>
+        <section id="skills">
+            <h2>For Fun</h2>
+            <ul>
+                <li>Dogs</li>
+                <li>More Dogs</li>
+                <li>Even more Dogs</li>
+            </ul>
+        </section>
+    </div>
+    <footer>
+        &copy; 2024 Judith Kapfer. <a href="mailto: judith.kapfer@gmx.at" target="_blank">judith.kapfer@gmx.at</a>
+    </footer>
+</body>
 </html>
