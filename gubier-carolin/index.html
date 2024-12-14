@@ -5,30 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Carolin Gubier - CV</title>
-<!-- Google Fonts -->
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-<style>
-    /* General Styling */
-    body {
-      font-family: 'Montserrat', shadows into light; /* Clean and modern font */
-      line-height: 1.6;
-      margin: 0;
-      padding: 40px;
-        justify-content: center;
-      background-color: #f5f5f5; /* Soft light gray background */
-      color: #2133ee; /* Dark blue for text */
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Montserrat', sans-serif; /* Modern font */
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5; /* Soft light gray background */
+            color: #2133ee; /* Dark blue for text */
+            text-align: center; /* Centers inline elements */
+        }
 
-</style>
-    
+        header, section {
+            margin-bottom: 30px;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+            width: 300px;
+            border-radius: 50%; /* Makes the photo round */
+        }
+
+        h1, h2, h3 {
+            margin: 10px 0;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        /* Flexbox to center content */
+        body, .contact, .education, .experience, .skills, .hobbies {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Emoji Styling */
+        .hobbies p {
+            font-size: 35px;
+            margin: 10px 0;
+        }
+    </style>
 </head>
 <body>
-
     <header>
         <h1>Carolin Gubier</h1>
         <p class="tagline">Dynamic, dedicated, and passionate about purpose-driven marketing. Creative mind in content strategy, copywriting, and graphic design.</p>
     </header>
-  <img src="Foto_Gubier.JPG" alt="Photo of Carolin Gubier" width="300">
+
+    <img src="Foto_Gubier.JPG" alt="Photo of Carolin Gubier">
+
     <section class="contact">
         <h2>Contact Details</h2>
         <p>Email: <a href="mailto:Carolin.Gubier@edu.fh-joanneum.at">Carolin.Gubier@edu.fh-joanneum.at</a></p>
@@ -75,10 +112,7 @@
 
     <section class="hobbies">
         <h2>Hobbies</h2>
-        <style>
-        <p> ⛵ ⛰️ 🗺️ 📽️ width=40 </p>
-            </style>
+        <p>⛵️ ⛰️ 🗺️ 📽️</p>
     </section>
-
 </body>
 </html>
