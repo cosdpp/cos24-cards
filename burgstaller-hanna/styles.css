@@ -58,4 +58,23 @@ a:link {
     font-size: 20px; /* Larger font size for better visibility */
     transition: background-color 0.3s ease;
 }
+
+
+.socials a 
+{  display: inline-block;
+    padding: 15px 30px; /* Larger padding for a bigger button */
+    color: white;
+    background-color: rgb(241, 94, 22);
+    text-decoration: none;
+    border-radius: 50px; /* Keeps the button round */
+    font-size: 20px; /* Larger font size for better visibility */
+    transition: background-color 0.3s ease;
+}
     
+
+.bio {
+
+  background-color:#efefff;
+  margin: auto;
+  padding: 20px; 
+}
