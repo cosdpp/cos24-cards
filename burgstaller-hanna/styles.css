@@ -1,4 +1,3 @@
-/* General styles */
 body {
     font-family: 'Instrument Serif', serif;
     margin: 0;
@@ -14,13 +13,11 @@ h1 {
     font-size: 45px;
     line-height: 55px;
     font-weight: normal;
- 
 }
 
 
 a:link {
     font-style: italic;
-
   }
 
 
@@ -34,28 +31,29 @@ a:link {
     color: blue;
     background-color: transparent;
     text-decoration: underline;
-  
   }
 
 
   .about {
     max-width: 800px;
     margin: auto;
-    padding: 20px; }
+    padding: 20px; 
+  }
 
  .contact {
      background-color: blue;
      margin: auto;
-    padding: 20px; }
+    padding: 20px; 
+ }
 
 .contact a {
     display: inline-block;
-    padding: 15px 30px; /* Larger padding for a bigger button */
+    padding: 15px 30px; 
     color: white;
     background-color: rgb(241, 94, 22);
     text-decoration: none;
-    border-radius: 50px; /* Keeps the button round */
-    font-size: 20px; /* Larger font size for better visibility */
+    border-radius: 50px; 
+    font-size: 20px; 
     transition: background-color 0.3s ease;
 }
 
@@ -73,8 +71,10 @@ a:link {
     
 
 .bio {
-
   background-color:#efefff;
   margin: auto;
   padding: 20px; 
 }
+
+
+
