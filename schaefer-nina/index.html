@@ -1,33 +1,232 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
   <head>
     <meta charset="utf-8">
-    <title>@@MyName@@’s Card</title>
+    <meta name="viewport" content="width=device-width">
+    <title>Business Card Nina Schäfer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+
     <style>
-      /* Styling */
+      /* Allgemeines Styling für den Körper */
+      body {
+        font-family: 'DM Sans', Arial;
+        margin: 10;
+        padding: 10;
+        background-color: #f4f4f9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100;
+      }
+
+      /* Container für die Karte */
+      .card {
+        background-color: #d5dbc4;
+        width: 600px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px #f1f3eb;
+        overflow: hidden;
+        text-align: center;
+        padding: 20px;
+      }
+
+      /* Profilbild */
+      .profile-image {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin-bottom: 30px;
+      }
+
+      /* Überschrift */
+      h1 {
+        font-size: 1.5rem;
+        margin: 0;
+        color: #000000;
+      }
+
+      /* Allgemeine Section-Stile */
+      section {
+        margin: 20px 0;
+      }
+
+      h2 {
+        font-size: 1.2rem;
+        color: #80924d;
+        margin-bottom: 10px;
+      }
+
+      /* Kästchen für Inhalt */
+      .content-box {
+        background-color: #f9f9f9;
+        padding: 10px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        text-align: left;
+      }
+
+      .content-box p, .content-box ul {
+        margin: 0;
+        padding: 0;
+      }
+
+      .content-box ul {
+        padding-left: 20px;
+      }
+
+      /* Styling für das Hauptlayout */
+      main {
+        padding: 20px;
+      }
+
+      /* Footer-Styling */
+      footer {
+        margin-top: 10px;
+        padding: 10px;
+        background-color: #80924d;
+        color: white;
+        border-radius: 8px;
+      }
+
+      .contact-info {
+        font-size: 0.9rem;
+        margin-bottom: 10px;
+      }
+
+      /* Buttons */
+      .social-buttons a {
+        text-decoration: none;
+        padding: 7px 12px;
+        margin: 0 5px;
+        color: #80924d;
+        background-color: #ffffff;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
+
     </style>
   </head>
-  </head>
   <body>
-    <header>
-      <h1>@@MyName</h1>
-    </header>
-    <main>
-      <section aria-labelledby="bio-heading">
-        <h2 id="bio-heading">Bio</h2>
-        <p>@@About Me@@</p>
-      </section>
-      <section aria-labelledby="hobbies-heading">
-        <h2 id="hobbies-heading">Hobbies</h2>
-        @@My Hobbies@@
-      </section>
-      <section aria-labelledby="workxp-heading">
-        <h2 id="workxp-heading">Work Experience</h2>
-        @@My Work Experience@@
-      </section>
-    </main>
-    <script>
-      /* Scripting */
-    </script>
+    <div class="card">
+      <header>
+        <!-- Profilbild -->
+        <img src="DFB_Bild.jpg" alt="Bild Nina Schäfer" class="profile-image">
+        <h1>Nina Schäfer</h1>
+      </header>
+
+      <main>
+
+        <!-- Bio-Abschnitt -->
+        <section aria-labelledby="bio-heading">
+          <h2 id="bio-heading">Bio</h2>
+          <div class="content-box">
+            <p>
+            <strong>Hi, I'm Nina!</strong><br>
+            I graduated with a Bachelor of Science (B.Sc.) in Online Communication from Darmstadt University of Applied Sciences in March 2024. Currently, I work as a working student at Scherer-Lupp Rosenberger Heldenakademie GbR, where I support the team in areas like podcast, social media, blog, website, and newsletter. In addition, I’m pursuing a Master's degree in Content Strategy at FH Joanneum in Graz.
+            </p>
+          </div>
+        </section>
+
+        <!-- Arbeitserfahrung-Abschnitt -->
+        <section aria-labelledby="workxp-heading">
+          <h2 id="workxp-heading">Work Experience</h2>
+          <div class="content-box">
+            <p>
+            </p>
+                <strong>Working Student at <a href="https://www.amtshelden.de">Amtshelden</a></strong><br>
+                Scherer-Lupp Rosenberger Heldenakademie GbR (April 2023 - today)
+                <ul>
+                    <li>Editing and production of the Podcast “Kleinstadtniveau”</li>
+                    <li>Social Media- und Community Management</li>
+                    <li>Newsletter (E-Mail-Marketing)</li>
+                    <li>Amtshelden Blog + Website</li>
+                </ul>
+            </p>
+                <br>
+            <p>
+                <strong>Intern Channel Mangement</strong><br>
+                <a href="https://www.dfb.de">DFB GmbH & Co. KG</a> / Mediarights Department (August 2022 - March 2023)
+                <ul>
+                    <li>Channel- und Content Management of the DFB's digital platforms</li>
+                    <li>Key-Account Management of all national and international media partners of the DFB</li>
+                    <li>Collaboration in the four key areas of the department</li>
+                </ul>
+            </p>
+          </div>
+        </section>
+
+        <!-- Schulbildung-Abschnitt -->
+        <section aria-labelledby="schulbildung-heading">
+            <h2 id="schulbildung-heading">Education</h2>
+            <div class="content-box">
+                <p>
+                    <strong>FH Joanneum Graz, University of Applied Sciences</strong><br>
+                    Master of Arts (M.A.), <a href="https://www.fh-joanneum.at/content-strategie-und-digitale-kommunikation/master/">Content Strategy</a>
+                    <ul>
+                        <li>October 2024 - September 2026</li>
+                    </ul>
+                </p>
+                <br>
+                <p>
+                    <strong>Hochschule Darmstadt, University of Applied Sciences</strong><br>
+                    Bachelor of Science (B.Sc.), <a href="https://ok.mediencampus.h-da.de">Onlinecommunication</a>
+                    <ul>
+                        <li>October 2020 - March 2024</li>
+                        <li>Focus: Online-PR</li>
+                        <li>Bachelor thesis topic: LinkedIn for public authorities</li>
+                    </ul>
+                </p>
+                <br>
+                <p>
+                    <strong><a href="https://lfsb.de">Liebfrauenschule</a> Bensheim</strong><br>
+                    A-levels 2020
+                    <ul>
+                        <li>August 2012 - July 2020</li>
+                    </ul>
+                </p>
+            </div>
+          </section>
+
+        <!-- Skills-Abschnitt -->
+        <section aria-labelledby="skills-heading">
+            <h2 id="skills-heading">Skills</h2>
+            <div class="content-box">
+                <p>
+                    <strong>Hard Skills</strong>
+                    <ul>
+                        <li>Channel- und Content Management</li>
+                        <li>Basic knowledge of photo and video editing</li>
+                        <li>Blog und Website</li>
+                        <li>Content-Strategie</li>
+                        <li>E-Mail-Marketing</li>
+                    </ul>
+                </p>
+                <br>
+                <p>
+                    <strong>Soft Skills</strong>
+                    <ul>
+                        <li>Motivated, disciplined</li>
+                        <li>Team player, reliable</li>
+                        <li>Independent, organized, and structured working style</li>
+                    </ul>
+                </p>
+          </section>
+
+      </main>
+
+      <!-- Footer mit Kontaktdaten und sozialen Buttons -->
+      <footer>
+        <div class="contact-info">
+          <p><strong>E-mail:</strong> nina.schaefer@edu.fh-joanneum.at</p>
+        </div>
+        <div class="social-buttons">
+          <a href="https://www.instagram.com/ninashfr" target="_blank">Instagram</a>
+          <a href="https://www.linkedin.com/in/nina-schäfer" target="_blank">LinkedIn</a>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
