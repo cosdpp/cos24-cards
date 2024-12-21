@@ -2,32 +2,314 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Carolin’s Card</title>
+    <title>Carolin’s Modern CV</title>
     <style>
-      /* Styling */
+      /* General Styles */
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #000;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        min-height: 100vh;
+        text-align: left;
+        line-height: 1.5;
+      }
+
+      main {
+        max-width: 950px;
+        width: 100%;
+        background: transparent;
+        padding: 15px;
+        margin-top: 20px;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .header-section {
+        background-color: #111;
+        padding: 20px;
+        border-radius: 10px;
+        border: 1px solid #444;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      .profile-container {
+        width: 200px;
+        height: 200px;
+        margin: 0 auto 15px;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 5px solid #0071e3;
+        box-shadow: 0 8px 16px rgba(0, 113, 227, 0.4);
+      }
+
+      .profile-picture {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .header-content h1 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin: 0;
+        color: #fff;
+      }
+
+      .header-content .quote {
+        font-size: 1rem;
+        color: #ccc;
+        margin-top: 10px;
+        font-style: italic;
+      }
+
+      .header-content .buttons {
+        margin-top: 15px;
+      }
+
+      .header-content .buttons a {
+        display: inline-block;
+        text-decoration: none;
+        font-size: 1rem;
+        color: #fff;
+        background: #0071e3;
+        padding: 10px 20px;
+        border-radius: 5px;
+        margin-right: 10px;
+        transition: background 0.3s ease;
+      }
+
+      .header-content .buttons a:hover {
+        background: #005bb5;
+      }
+
+      a {
+        color: #0071e3;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .section {
+        margin-bottom: 20px;
+        padding: 15px;
+        border-radius: 10px;
+        background-color: #111; /* Added background color */
+        border: 1px solid #444;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+      }
+
+      .section h2 {
+        font-size: 1.8rem;
+        margin: 0 0 10px;
+        font-weight: 600;
+        color: #fff;
+        position: relative;
+      }
+
+      .section h2::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        width: 50px;
+        height: 3px;
+        background: #0071e3;
+        border-radius: 3px;
+      }
+
+      .content-columns {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        flex-wrap: wrap;
+        align-items: stretch;
+      }
+
+      .column {
+        flex: 1;
+        min-width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .section ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      .section ul li {
+        margin: 5px 0;
+        font-size: 1rem;
+      }
+
+      .section.soft-skills ul li,
+      .section.languages ul li,
+      .section.hobbies ul li {
+        position: relative;
+        padding-left: 20px;
+      }
+
+      .section.soft-skills ul li::before,
+      .section.languages ul li::before,
+      .section.hobbies ul li::before {
+        content: "\2022";
+        color: #0071e3;
+        font-weight: bold;
+        display: inline-block;
+        width: 10px;
+        margin-left: -20px;
+      }
+
+      .skill-bar-label {
+        width: 150px;
+        text-align: left;
+        font-size: 1rem;
+      }
+
+      .skill-bar {
+        flex: 1;
+        height: 10px;
+        background-color: #444;
+        border-radius: 5px;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .skill-bar span {
+        display: block;
+        height: 100%;
+        background-color: #0071e3;
+        border-radius: 5px;
+      }
+
+      .equal-columns {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        align-items: stretch;
+      }
+
+      .equal-columns .section {
+        flex: 1;
+      }
+
+      footer {
+        margin-top: 15px;
+        font-size: 0.75rem;
+        color: #bbb;
+        text-align: center;
+      }
     </style>
   </head>
-  </head>
   <body>
-    <header>
-      <h1>Carolin</h1>
-    </header>
     <main>
-      <section aria-labelledby="bio-heading">
-        <h2 id="bio-heading">Bio</h2>
-        <p>@@About Me@@</p>
-      </section>
-      <section aria-labelledby="hobbies-heading">
-        <h2 id="hobbies-heading">Hobbies</h2>
-        @@My Hobbies@@
-      </section>
-      <section aria-labelledby="workxp-heading">
-        <h2 id="workxp-heading">Work Experience</h2>
-        @@My Work Experience@@
-      </section>
+      <div class="header-section">
+        <div class="profile-container">
+          <img src="/Users/carolintscharf/Documents/COS/carolin.jpg" alt="Profile Picture" class="profile-picture" />
+        </div>
+        <div class="header-content">
+          <h1>Carolin Tscharf</h1>
+          <div class="quote">"Passionate about creating impactful content and building meaningful connections."</div>
+          <div class="buttons">
+            <a href="mailto:carolin.tscharf@gmail.com">Contact</a>
+            <a href="https://www.linkedin.com/in/carolin-tscharf-3113011b2" target="_blank">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+      <div class="section about-me">
+        <h2>About Me</h2>
+        <ul>
+          <li>Birthday: 05.09.1999</li>
+          <li>Nationality: Austria</li>
+        </ul>
+      </div>
+      <div class="section work-experience">
+        <h2>Work Experience</h2>
+        <ul>
+          <li>Jan 2025 - Current: Social Media Editor at <a href="https://www.cookingcatrin.at" target="_blank">Cooking Catrin</a></li>
+          <li>2023-2024: Marketing Assistant at <a href="https://www.dck.at" target="_blank">DCK Unternehmensgruppe</a></li>
+          <li>2022-2023: Social Media Communications at <a href="https://www.sw-umwelttechnik.com" target="_blank">SW Umwelttechnik</a></li>
+        </ul>
+      </div>
+      <div class="section education">
+        <h2>Education</h2>
+        <ul>
+          <li>2024 - Current: Master in Content Strategy at <a href="https://www.fh-joanneum.at" target="_blank">FH Joanneum</a></li>
+          <li>2019-2022: Bachelor in Business Management at <a href="https://www.fh-kaernten.at" target="_blank">FH Kärnten</a></li>
+        </ul>
+      </div>
+      <div class="equal-columns">
+        <div class="section it-skills">
+          <h2>IT Skills</h2>
+          <ul>
+            <li>
+              <span class="skill-bar-label">Adobe Creative Suite</span>
+              <div class="skill-bar">
+                <span style="width: 90%;"></span>
+              </div>
+            </li>
+            <li>
+              <span class="skill-bar-label">Canva</span>
+              <div class="skill-bar">
+                <span style="width: 90%;"></span>
+              </div>
+            </li>
+            <li>
+              <span class="skill-bar-label">WordPress</span>
+              <div class="skill-bar">
+                <span style="width: 75%;"></span>
+              </div>
+            </li>
+            <li>
+              <span class="skill-bar-label">Figma</span>
+              <div class="skill-bar">
+                <span style="width: 60%;"></span>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="section soft-skills">
+          <h2>Soft Skills</h2>
+          <ul>
+            <li>Team Collaboration</li>
+            <li>Problem Solving</li>
+            <li>Communication</li>
+            <li>Time Management</li>
+            <li>Creativity</li>
+          </ul>
+        </div>
+      </div>
+      <div class="equal-columns">
+        <div class="section languages">
+          <h2>Languages</h2>
+          <ul>
+            <li>German (Mother language)</li>
+            <li>English (Fluent)</li>
+            <li>Italian (B1)</li>
+          </ul>
+        </div>
+        <div class="section hobbies">
+          <h2>Hobbies</h2>
+          <ul>
+            <li>Sports</li>
+            <li>Photography</li>
+            <li>Traveling</li>
+          </ul>
+        </div>
+      </div>
+      <footer>
+        <p>&copy; 2024 Carolin Tscharf</p>
+      </footer>
     </main>
-    <script>
-      /* Scripting */
-    </script>
   </body>
 </html>
