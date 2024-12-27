@@ -12,32 +12,60 @@
       margin: 0;
       padding: 0;
       color: #333;
+      background-color: #f0f8ff;
     }
     header {
-      background-color: #f4f4f9;
+      background-color: #e6f7ff;
       padding: 20px;
       text-align: center;
-      border-bottom: 2px solid #636b2f;
+      border-bottom: 2px solid #007acc;
+    }
+    header img {
+      max-width: 150px;
+      border-radius: 50%;
+      margin-bottom: 10px;
     }
     h1 {
       margin: 0;
-      color: #636b2f;
+      color: #007acc;
     }
     h2 {
-      color: #636b2f;
+      color: #007acc;
       border-bottom: 1px solid #ccc;
       padding-bottom: 5px;
     }
     section {
       margin: 20px;
+      padding: 15px;
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
     p {
       margin: 10px 0;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li {
+      margin: 5px 0;
+      padding: 5px;
+      background: #e6f7ff;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+    }
+    ul li span {
+      margin-right: 10px;
+      font-size: 1.2em;
     }
   </style>
 </head>
 <body>
   <header>
+    <img src="placeholder.jpg" alt="Your Photo" />
     <h1>Elena Lesjak</h1>
     <h2>About Me</h2>
     <p>
@@ -45,19 +73,29 @@
     </p>
   </header>
   <main>
-    <section aria-labelledby="bio-heading">
-      <h2 id="bio-heading">Bio</h2>
-      <p>/* Add a brief biography here */</p>
+    <section aria-labelledby="workxp-heading">
+      <h2 id="workxp-heading">Work Experience</h2>
+      <p>/* Replace this with details of your work experience */</p>
+    </section>
+
+    <section aria-labelledby="education-heading">
+      <h2 id="education-heading">Education</h2>
+      <p>/* Replace this with details of your education */</p>
     </section>
 
     <section aria-labelledby="hobbies-heading">
       <h2 id="hobbies-heading">My Hobbies</h2>
-      <p>/* Replace this with a description of your hobbies */</p>
+      <ul>
+        <li><span>🐶</span>Volunteering at animal shelter</li>
+        <li><span>🏊</span>Triathlon</li>
+        <li><span>📖</span>Reading</li>
+        <li><span>🎶</span>Music</li>
+      </ul>
     </section>
 
-    <section aria-labelledby="workxp-heading">
-      <h2 id="workxp-heading">Work Experience</h2>
-      <p>/* Replace this with details of your work experience */</p>
+    <section aria-labelledby="prevxp-heading">
+      <h2 id="prevxp-heading">Previous Experiences</h2>
+      <p>/* Replace this with details of your previous experiences */</p>
     </section>
   </main>
 </body>
