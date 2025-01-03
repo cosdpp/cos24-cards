@@ -2,32 +2,111 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>@@MyName@@’s Card</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@@MyName@@'s Card</title>
     <style>
-      /* Styling */
+      /* General Styling */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(135deg, #74ebd5, #acb6e5);
+        color: #333;
+      }
+
+      header {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 2rem;
+      }
+
+      header h1 {
+        margin: 0;
+        font-size: 2.5rem;
+      }
+
+      main {
+        padding: 1rem;
+        max-width: 800px;
+        margin: 2rem auto;
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      section {
+        margin-bottom: 2rem;
+      }
+
+      h2 {
+        border-bottom: 2px solid #74ebd5;
+        padding-bottom: 0.5rem;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        line-height: 1.6;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      li {
+        background: #f9f9f9;
+        margin: 0.5rem 0;
+        padding: 0.5rem;
+        border-radius: 4px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .card {
+        text-align: center;
+        padding: 1rem;
+        background: #fff;
+        border-radius: 8px;
+        margin-bottom: 2rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
     </style>
-  </head>
   </head>
   <body>
     <header>
-      <h1>@@MyName</h1>
+      <h1>@@MyName@@</h1>
     </header>
     <main>
       <section aria-labelledby="bio-heading">
         <h2 id="bio-heading">Bio</h2>
         <p>@@About Me@@</p>
       </section>
+
       <section aria-labelledby="hobbies-heading">
         <h2 id="hobbies-heading">Hobbies</h2>
-        @@My Hobbies@@
+        <ul>
+          @@My Hobbies@@
+        </ul>
       </section>
+
       <section aria-labelledby="workxp-heading">
         <h2 id="workxp-heading">Work Experience</h2>
-        @@My Work Experience@@
+        <ul>
+          @@My Work Experience@@
+        </ul>
       </section>
+
+      <div class="card">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:@@MyEmail@@">@@MyEmail@@</a></p>
+        <p>Website: <a href="@@MyWebsite@@" target="_blank">@@MyWebsite@@</a></p>
+      </div>
     </main>
     <script>
-      /* Scripting */
+      document.addEventListener('DOMContentLoaded', () => {
+        const header = document.querySelector('header h1');
+        header.textContent = `Welcome to ${header.textContent}`;
+      });
     </script>
   </body>
 </html>
