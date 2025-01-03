@@ -3,36 +3,42 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@@MyName@@'s Card</title>
+    <title>My Card</title>
     <style>
-      /* General Styling */
       body {
-        font-family: Arial, sans-serif;
+        font-family: 'Courier New', Courier, monospace;
         margin: 0;
         padding: 0;
-        background: linear-gradient(135deg, #74ebd5, #acb6e5);
-        color: #333;
+        background: linear-gradient(135deg, #f5f5dc, #faf0e6);
+        color: #4a7c6e;
       }
 
       header {
-        background-color: #333;
-        color: #fff;
+        background-image: url('https://i.pinimg.com/736x/f8/fb/20/f8fb20929da784ca3b224f5c45dac062.jpg');
+        background-size: cover;
+        background-position: center;
+        color: #b5d8b5;
         text-align: center;
-        padding: 2rem;
+        padding: 5rem 1rem;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
       }
 
       header h1 {
         margin: 0;
-        font-size: 2.5rem;
+        font-size: 3.5rem;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
       }
 
       main {
-        padding: 1rem;
-        max-width: 800px;
-        margin: 2rem auto;
-        background: #fff;
-        border-radius: 8px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 2rem;
+        max-width: 900px;
+        margin: 3rem auto;
+        background: rgba(210, 247, 229, 0.9);
+        border-radius: 10px;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 4px 20px rgba(210, 247, 229, 0.3);
       }
 
       section {
@@ -40,72 +46,211 @@
       }
 
       h2 {
-        border-bottom: 2px solid #74ebd5;
+        border-bottom: 2px solid #b5d8b5;
         padding-bottom: 0.5rem;
         margin-bottom: 1rem;
+        font-size: 1.8rem;
+        font-family: 'Arial', sans-serif;
       }
 
       p {
-        line-height: 1.6;
+        line-height: 1.8;
+        font-size: 1.2rem;
+        font-family: 'Courier New', Courier, monospace;
       }
 
       ul {
         list-style: none;
         padding: 0;
+        margin: 0;
       }
 
       li {
-        background: #f9f9f9;
+        background: rgba(255, 255, 255, 0.9);
         margin: 0.5rem 0;
-        padding: 0.5rem;
-        border-radius: 4px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 0.8rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        transition: transform 0.2s;
+      }
+
+      li:hover {
+        transform: scale(1.05);
+      }
+
+      a {
+        color: #70a1d7;
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+
+      a:hover {
+        color: #4877a3;
       }
 
       .card {
         text-align: center;
+        padding: 2rem;
+        background: rgba(255, 255, 255, 0.9);
+        color: #196F3D;
+        border-radius: 10px;
+        margin-top: 2rem;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+      }
+
+      .card h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        color: #b5d8b5;
+      }
+
+      .profile-pic {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin: 0 auto 1rem auto;
+        display: block;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      }
+
+      .skills {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center;
+      }
+
+      .skills div {
         padding: 1rem;
-        background: #fff;
+        background: rgba(255, 255, 255, 0.9);
         border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        font-size: 1.1rem;
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
+        width: 120px;
+        transition: transform 0.2s;
+      }
+
+      .skills div:hover {
+        transform: scale(1.1);
+      }
+
+      .timeline {
+        padding: 0;
+        list-style: none;
+        border-left: 2px solid #7cb77b;
+        margin: 2rem auto;
+        max-width: 600px;
+      }
+
+      .timeline li {
+        position: relative;
+        padding: 1rem 2rem;
         margin-bottom: 2rem;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        background: rgba(255, 255, 255, 0.8);
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      .timeline li:before {
+        content: "";
+        position: absolute;
+        left: -11px;
+        top: 1rem;
+        width: 20px;
+        height: 20px;
+        background: #b5d8b5;
+        border-radius: 50%;
+        border: 3px solid white;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
       }
     </style>
   </head>
   <body>
     <header>
-      <h1>@@MyName@@</h1>
+      <h1>Aleksandra Epanchintseva</h1>
     </header>
     <main>
       <section aria-labelledby="bio-heading">
         <h2 id="bio-heading">Bio</h2>
-        <p>@@About Me@@</p>
+        <img src="photo.jpg" alt="Profile Picture" class="profile-pic">
+        <p>Hi! I'm a Technical Writer with 4 years of experience at Intel. I love crafting clear, concise documentation to help users make the most of their tools and technologies.</p>
       </section>
 
       <section aria-labelledby="hobbies-heading">
         <h2 id="hobbies-heading">Hobbies</h2>
         <ul>
-          @@My Hobbies@@
+          <li>Adoring my pet rats 🐀</li>
+          <li>Listening to Taylor Swift 🎶</li>
+          <li>Figure skating ⛸️</li>
+          <li>Exploring coffee shops ☕</li>
+          <li>Watching classic movies 🎥</li>
         </ul>
       </section>
 
       <section aria-labelledby="workxp-heading">
         <h2 id="workxp-heading">Work Experience</h2>
         <ul>
-          @@My Work Experience@@
+          <li>Technical Writer at Intel (4 years)</li>
+          <li>Content Strategist for software tools</li>
+          <li>Contributor to Generative AI projects</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="skills-heading">
+        <h2 id="skills-heading">Skills</h2>
+        <div class="skills">
+          <div>Technical Writing</div>
+          <div>Content Strategy</div>
+          <div>C++</div>
+          <div>Python</div>
+          <div>Java</div>
+        </div>
+      </section>
+
+      <section aria-labelledby="timeline-heading">
+        <h2 id="timeline-heading">Career Timeline</h2>
+        <ul class="timeline">
+          <li>
+            <strong>2020</strong>: Started as a Technical Writer at Intel.
+          </li>
+          <li>
+            <strong>2022</strong>: Promoted to Content Strategist.
+          </li>
+          <li>
+            <strong>2024</strong>: Contributor to Generative AI projects.
+          </li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="education-heading">
+        <h2 id="education-heading">Education</h2>
+        <ul>
+          <li>Bachelor Degree in Computer Science: HSE</li>
+          <li>Master Degree in Content Strategy (In Progress): FH-Joanneum</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="languages-heading">
+        <h2 id="languages-heading">Languages Spoken</h2>
+        <ul>
+          <li>English (Fluent)</li>
+          <li>Russian (Native)</li>
+          <li>German (Intermediate)</li>
         </ul>
       </section>
 
       <div class="card">
         <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:@@MyEmail@@">@@MyEmail@@</a></p>
-        <p>Website: <a href="@@MyWebsite@@" target="_blank">@@MyWebsite@@</a></p>
+        <p>Email: <a href="mailto:example@example.com">aleksandra.epanchintseva@edu.fh-joanneum.at</a></p>
+        <p>GitHub: <a href="https://github.com/aepanchi" target="_blank">@aepanchi</a></p>
       </div>
     </main>
     <script>
       document.addEventListener('DOMContentLoaded', () => {
         const header = document.querySelector('header h1');
-        header.textContent = `Welcome to ${header.textContent}`;
+        header.textContent = `Meet ${header.textContent}`;
       });
     </script>
   </body>
