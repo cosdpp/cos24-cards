@@ -1,33 +1,254 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>@@MyName@@’s Card</title>
+    <title>Business Card Lisa Suntinger</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
     <style>
-      /* Styling */
+      /* Global font */
+      body {
+        font-family: 'Raleway', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        color: #333;
+      }
+
+      /* === INTRO SECTION === */
+      .intro {
+        background-color: #2a7a3b; /* Green background */
+        color: white;
+        text-align: center;
+        padding: 4rem 2rem;
+        font-size: 2rem;
+      }
+
+      .intro h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        font-weight: 700;
+      }
+
+      .intro p {
+        font-size: 1.1rem;
+        max-width: 800px;
+        margin: 0 auto;
+        line-height: 1.6;
+      }
+
+      /* === PERSONAL DATA SECTION === */
+      #personal-daten {
+        background-color: #f9f9f9;
+        padding: 4rem 2rem;
+      }
+
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: space-around;
+      }
+
+      .col-2 {
+        flex: 1 1 calc(33.33% - 20px);
+        box-sizing: border-box;
+        margin: 10px 0;
+      }
+
+      .personal-daten-box {
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 2rem;
+        text-align: center;
+        transition: transform 0.3s;
+      }
+
+      .personal-daten-box:hover {
+        transform: translateY(-10px);
+      }
+
+      .personal-daten-box h1 {
+        font-size: 1.5rem;
+        color: #2a7a3b;
+        margin-bottom: 1rem;
+      }
+
+      .personal-daten-box p {
+        font-size: 1rem;
+        color: #555;
+      }
+
+      /* === CERTIFICATES AND SKILLS SECTION === */
+      .kompetenzen {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        background-color: #f0f0f0;
+        text-align: center;
+      }
+
+      .kompetenzen:nth-of-type(even) {
+        background-color: #ffffff;
+      }
+
+      .kompetenzen-box {
+        background-color: #3D3F45;
+        text-align: center;
+        color: white;
+        padding: 1.5rem;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+      }
+
+      .kompetenzen-box:hover {
+        transform: translateY(-10px);
+      }
+
+      .kompetenzen-box h2 {
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+      }
+
+      .kompetenzen-box p {
+        font-size: 1rem;
+        line-height: 1.6;
+      }
+
+      /* === CONTACT SECTION === */
+      .kontakte {
+        padding: 4rem 2rem;
+        background-color: #f9f9f9;
+        text-align: center;
+      }
+
+      .kontakte h2 {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+        color: #2a7a3b;
+      }
+
+      .kontakte ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        font-size: 1.1rem;
+      }
+
+      .kontakte ul li {
+        margin: 0.5rem 0;
+        color: #555;
+      }
+
+      /* === FOOTER === */
+      footer {
+        background-color: #2a7a3b; /* Green background */
+        color: white;
+        text-align: center;
+        padding: 1.5rem;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+      }
+
+      footer p {
+        margin: 0;
+        font-size: 1rem;
+      }
+
+      /* RESPONSIVE DESIGN */
+      @media (max-width: 1024px) {
+        .col-2 {
+          flex: 1 1 calc(50% - 20px);
+        }
+      }
+
+      @media (max-width: 768px) {
+        .col-2 {
+          flex: 1 1 100%;
+        }
+
+        .row {
+          flex-direction: column;
+        }
+      }
     </style>
   </head>
-  </head>
+
   <body>
-    <header>
-      <h1>@@MyName</h1>
-    </header>
+
+    <!-- INTRO SECTION -->
+    <section class="intro">
+      <h1>Business Card Lisa Suntinger</h1>
+      <p>I am Lisa Marie Suntinger, a creative and results-oriented professional with a Bachelor's degree in Media and Communication Studies and currently pursuing a Master's in Content Strategy at FH Joanneum. With practical experience in Social Media Management, Web Design, and Digital Content Creation, I excel in communication, creativity, and data-driven strategies.</p>
+    </section>
+
     <main>
-      <section aria-labelledby="bio-heading">
-        <h2 id="bio-heading">Bio</h2>
-        <p>@@About Me@@</p>
+      <!-- PERSONAL DATA SECTION -->
+      <section id="personal-daten">
+        <div class="row">
+          <div class="col-2">
+            <article class="personal-daten-box">
+              <h1>Personal Data</h1>
+              <p>Full Name: Lisa Marie Suntinger <br> Date of Birth: 08.02.2002 <br> Place of Birth: Lienz <br> Nationality: Austrian</p>
+            </article>
+          </div>
+          <div class="col-2">
+            <article class="personal-daten-box">
+              <h1>Work Experience</h1>
+              <p>06/2022 – Present: Georg's Salon Weinraritäten – Social Media & Web <br> 10/2022 – 12/2022: Sticklett technologies GmbH – Social Media Manager <br> 07/2019 – 08/2019: Internship at Campus Technik Lienz</p>
+            </article>
+          </div>
+          <div class="col-2">
+            <article class="personal-daten-box">
+              <h1>Education</h1>
+              <p>2024 - Present: MA Content Strategy - FH Joanneum <br> 2020-2024: BA Media and Communication Studies <br> 2016-2020: BORG Lienz</p>
+            </article>
+          </div>
+        </div>
       </section>
-      <section aria-labelledby="hobbies-heading">
-        <h2 id="hobbies-heading">Hobbies</h2>
-        @@My Hobbies@@
+
+      <!-- CERTIFICATES AND SKILLS SECTION -->
+      <section class="kompetenzen">
+        <h1>Certificates and Soft Skills</h1>
+        <div class="row">
+          <div class="col-3">
+            <article class="kompetenzen-box">
+              <h2>HTML & CSS</h2>
+              <p>I completed the "Ultimate HTML and CSS Course" by Ruben Winkler on Udemy, which includes 30 hours of video content. In this course, I gained in-depth knowledge of HTML and CSS and learned to create engaging and functional websites.</p>
+            </article>
+          </div>
+          <div class="col-3">
+            <article class="kompetenzen-box">
+              <h2>English Skills at C1 Level</h2>
+              <p>I am proficient in English at the C1 level, certified by Cambridge English. This certification demonstrates my advanced ability to communicate effectively in professional and academic contexts.</p>
+            </article>
+          </div>
+          <div class="col-3">
+            <article class="kompetenzen-box">
+              <h2>Soft Skills and Competencies</h2>
+              <p>As a Social Media Manager, I excel in communication, creativity, and problem-solving skills. I am highly adaptable and work effectively in a team to promote engagement and achieve campaign goals.</p>
+            </article>
+          </div>
+        </div>
       </section>
-      <section aria-labelledby="workxp-heading">
-        <h2 id="workxp-heading">Work Experience</h2>
-        @@My Work Experience@@
+
+      <!-- CONTACT SECTION -->
+      <section class="kontakte">
+        <h2>Contacts</h2>
+        <ul>
+          <li>Email: <a href="lisa.suntinger@edu.fh-joanneum.at">lisa.suntinger@edu.fh-joanneum.at</a></li>
+          <li><a href="tel:+4369910446032">+4369910446032</a></li>
+          <li>Address: Universitätsstraße 80, 9020 Klagenfurt</li>
+        </ul>
       </section>
     </main>
-    <script>
-      /* Scripting */
-    </script>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>Course: Digital Publishing Platforms</p>
+    </footer>
+
   </body>
 </html>
