@@ -2,32 +2,119 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>@@MyName@@’s Card</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anastasiia Ageeva's Work Profile</title>
     <style>
-      /* Styling */
+      body {
+        font-family: Verdana, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+        color: #333;
+      }
+
+      header {
+        background-color: #003366;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        border-bottom: 4px solid #002244;
+      }
+
+      header h1 {
+        margin: 0;
+        font-size: 2.5em;
+      }
+      .profile-photo {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin: 10px auto;
+        display: block;
+           box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      }
+
+      main {
+        padding: 20px;
+      }
+
+      section {
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        padding: 15px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      section h2 {
+        font-size: 1.8em;
+        color: #003366;
+        margin-top: 0;
+        border-bottom: 2px solid #003366;
+        padding-bottom: 5px;
+      }
+
+      section ul {
+        padding-left: 20px;
+      }
+
+      section ul li {
+        margin-bottom: 10px;
+      }
+
+      .linkedin-link {
+        color: #003366;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      .linkedin-link:hover {
+        text-decoration: underline;
+      }
+
     </style>
-  </head>
   </head>
   <body>
     <header>
-      <h1>@@MyName</h1>
+      <h1>Anastasiia Ageeva</h1>
+      <img 
+      src="https://media.licdn.com/dms/image/v2/C5103AQHYBZMeYgiFWw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1517062486169?e=2147483647&v=beta&t=KVp5XjNlyezSx3QE243nxV0Q_AC066uG0PBP8SdJznU" 
+      alt="Profile Photo of Anastasiia Ageeva" 
+      class="profile-photo">
     </header>
     <main>
       <section aria-labelledby="bio-heading">
         <h2 id="bio-heading">Bio</h2>
-        <p>@@About Me@@</p>
+        <p>Experienced Technical Writer and Content Strategist with excellent communication skills and a strong technical background. Over 10 years of experience supporting documentation for software products 
+          at increasing levels of responsibility. Over 3 years of experience supporting business critical projects as a Content Strategist. Quick learner who strives to improve her knowledge of UX writing, 
+          information architecture, and content strategy.
+        </p>
       </section>
       <section aria-labelledby="hobbies-heading">
         <h2 id="hobbies-heading">Hobbies</h2>
-        @@My Hobbies@@
+        <ul>
+          <li>Photography</li>
+          <li>Travelling</li>
+          <li>Cooking</li>
+        </ul>
       </section>
       <section aria-labelledby="workxp-heading">
         <h2 id="workxp-heading">Work Experience</h2>
-        @@My Work Experience@@
+        <em>Software Technical Writer, Content Strategist</em>
+        <ul>
+          <li>Develops comprehensive content and distribution strategies aligned with business goals and target audience needs.</li>
+          <li>Architects E2E learning paths and improves product UX through content improvements.</li>
+          <li>Establishes guidelines for content creation, incorporating usability recommendations, industry best practices, and corporate guidelines.</li>
+          <li>Monitors and analyzes content performance using doc statistics data.</li>
+        </ul>
+      </section>
+      <section aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Contact</h2>
+        <p>E-mail: anastasiia.ageeva@edu.fh-joanneum.at</p>
+        <p>LinkedIn: <a href="https://de.linkedin.com/in/anastasiya-ageeva-36282758" class="linkedin-link" target="_blank">Anastasiya Ageeva</a></p>
       </section>
     </main>
-    <script>
-      /* Scripting */
-    </script>
   </body>
 </html>
