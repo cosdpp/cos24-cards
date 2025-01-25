@@ -2,106 +2,121 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Patricia April Hisugan - Business Card</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <title>Patricia April Hisugan</title>
     <style>
+      /* Styling */
       body {
-        font-family: 'Playfair Display', serif;
+        font-family: 'Roboto', sans-serif; /* Elegant, modern font */
         margin: 0;
         padding: 0;
-        background-color: #f4f4f4;
-        color: #333;
-        line-height: 1.6;
+        background-color: #f2f2f2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
       }
-      header {
-        background-color: #333;
-        color: #fff;
-        padding: 1rem 2rem;
+      
+      .card {
+        background-color: #ffffff;
+        width: 380px;
+        height: 550px;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        position: relative;
+      }
+
+      .header {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 20px;
+      }
+      
+      .header img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        border: 3px solid #f7a500;
+      }
+      
+      .name {
+        font-size: 1.7rem;
+        color: #2c2c2c;
+        font-weight: bold;
+        margin-bottom: 15px;
         text-align: center;
       }
-      header h1 {
-        margin: 0;
-        font-size: 2rem;
+      
+      .content {
+        font-size: 1rem;
+        color: #5a5a5a;
+        text-align: justify;
       }
-      main {
-        padding: 2rem;
-        max-width: 800px;
-        margin: auto;
-        background-color: #fff;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        border-radius: 8px;
+
+      .content h2 {
+        font-size: 1.2rem;
+        color: #f7a500;
+        margin-top: 20px;
       }
-      section {
-        margin-bottom: 1.5rem;
+
+      .content p {
+        margin: 5px 0;
+        line-height: 1.5;
       }
-      section h2 {
-        color: #e05a00; /* Dark orange */
-        font-size: 1.5rem;
-        margin-bottom: 0.5rem;
+
+      .contact-info {
+        margin-top: 20px;
+        text-align: center;
+        font-size: 0.9rem;
+        color: #007bff;
       }
-      p {
-        margin: 0.5rem 0;
-      }
-      .highlight {
-        color: #e05a00; /* Dark orange */
+
+      .contact-info a {
+        text-decoration: none;
+        color: #007bff;
         font-weight: bold;
       }
-      footer {
-        text-align: center;
-        margin-top: 2rem;
-        font-size: 0.9rem;
-        color: #666;
-      }
-      footer a {
-        color: #e05a00;
-        text-decoration: none;
-      }
-      footer a:hover {
+
+      .contact-info a:hover {
         text-decoration: underline;
+      }
+      
+      /* Responsive Design */
+      @media (max-width: 400px) {
+        .card {
+          width: 90%;
+        }
       }
     </style>
   </head>
   <body>
-    <header>
-      <h1>Patricia April Hisugan</h1>
-    </header>
-    <main>
-      <section aria-labelledby="bio-heading">
-        <h2 id="bio-heading">Let's work together!</h2>
-        <p>
-          I'm a <span class="highlight">content manager</span> with about <span class="highlight">11 years of experience</span> working with companies in the
-          <span class="highlight">blockchain, logistics, healthcare,</span> and <span class="highlight">marketing industries</span>, among many others.
-        </p>
-      </section>
+    <div class="card">
+      <div class="header">
+        <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fat.linkedin.com%2Fin%2Fpatcontent&psig=AOvVaw0k1t0HRXLwaAqnWRCEJOsr&ust=1737879376624000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPC_37C3kIsDFQAAAAAdAAAAABAE" alt="Patricia's Image">
+      </div>
+      <div class="name">
+        Patricia April Hisugan
+      </div>
+      <div class="content">
+        <h2>Let's work together!</h2>
+        <p>I'm a content manager with about 11 years of experience working with companies in the blockchain, logistics, healthcare, and marketing industries, among many others.</p>
 
-      <section aria-labelledby="expertise-heading">
-        <h2 id="expertise-heading">Expertise</h2>
-        <p><span class="highlight">Copywriting</span>, <span class="highlight">SEO</span>, and <span class="highlight">Email Marketing</span>.</p>
-      </section>
+        <h2>Expertise</h2>
+        <p>Copywriting, SEO, Content Strategy, Email Marketing, Project Management</p>
 
-      <section aria-labelledby="proud-heading">
-        <h2 id="proud-heading">Work I'm Most Proud Of</h2>
-        <p>
-          Ghostwriting a <span class="highlight">book</span> for a <span class="highlight">motivational speaker</span>.
-        </p>
-      </section>
+        <h2>Work I'm most proud of</h2>
+        <p>Ghostwriting a book for a motivational speaker</p>
 
-      <section aria-labelledby="languages-heading">
-        <h2 id="languages-heading">Languages</h2>
-        <p><span class="highlight">English</span> and <span class="highlight">Filipino</span>.</p>
-      </section>
-
-      <section aria-labelledby="contact-heading">
-        <h2 id="contact-heading">Contact Details</h2>
-        <p>
-          <span class="highlight">Email:</span> <a href="mailto:patzhisugan@gmail.com">patzhisugan@gmail.com</a>
-        </p>
-        <p>
-          <span class="highlight">WhatsApp:</span> <a href="https://wa.me/639279813428">+639279813428</a>
-        </p>
-      </section>
-    </main>
+        <h2>Languages</h2>
+        <p>English and Filipino</p>
+      </div>
+      <div class="contact-info">
+        <h2>Reach out!</h2>
+        <p>Email: <a href="mailto:patzhisugan@gmail.com">patzhisugan@gmail.com</a></p>
+        <p>Whatsapp: <a href="https://wa.me/639279813428">+639279813428</a></p>
+      </div>
+    </div>
   </body>
 </html>
-
