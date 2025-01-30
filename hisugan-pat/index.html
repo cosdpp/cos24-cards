@@ -2,51 +2,38 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Patricia April Hisugan</title>
     <style>
       /* Styling */
       body {
-        font-family: 'Roboto', sans-serif; /* Elegant, modern font */
+        font-family: 'Roboto', sans-serif;
         margin: 0;
         padding: 0;
         background-color: #f2f2f2;
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100vh;
+        min-height: 100vh;
+        flex-direction: column;
       }
       
       .card {
         background-color: #ffffff;
-        width: 380px;
-        height: 550px;
+        width: 400px;
         padding: 30px;
         border-radius: 12px;
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
         display: flex;
         flex-direction: column;
-        position: relative;
-      }
-
-      .header {
-        display: flex;
-        justify-content: flex-end;
-        margin-bottom: 20px;
-      }
-      
-      .header img {
-        width: 80px;
-        height: 80px;
-        border-radius: 50%;
-        border: 3px solid #f7a500;
+        text-align: center;
       }
       
       .name {
-        font-size: 1.7rem;
+        font-size: 1.8rem;
         color: #2c2c2c;
         font-weight: bold;
         margin-bottom: 15px;
-        text-align: center;
       }
       
       .content {
@@ -54,37 +41,44 @@
         color: #5a5a5a;
         text-align: justify;
       }
-
+      
       .content h2 {
         font-size: 1.2rem;
         color: #f7a500;
         margin-top: 20px;
       }
-
+      
       .content p {
         margin: 5px 0;
-        line-height: 1.5;
+        line-height: 1.6;
       }
-
+      
       .contact-info {
         margin-top: 20px;
         text-align: center;
         font-size: 0.9rem;
         color: #007bff;
       }
-
+      
       .contact-info a {
         text-decoration: none;
         color: #007bff;
         font-weight: bold;
       }
-
+      
       .contact-info a:hover {
         text-decoration: underline;
       }
       
+      .footer {
+        margin-top: 30px;
+        font-size: 0.85rem;
+        color: #777;
+        text-align: center;
+      }
+      
       /* Responsive Design */
-      @media (max-width: 400px) {
+      @media (max-width: 420px) {
         .card {
           width: 90%;
         }
@@ -93,30 +87,26 @@
   </head>
   <body>
     <div class="card">
-      <div class="header">
-        <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fat.linkedin.com%2Fin%2Fpatcontent&psig=AOvVaw0k1t0HRXLwaAqnWRCEJOsr&ust=1737879376624000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPC_37C3kIsDFQAAAAAdAAAAABAE" alt="Patricia's Image">
-      </div>
-      <div class="name">
-        Patricia April Hisugan
-      </div>
+      <div class="name">Patricia April Hisugan</div>
       <div class="content">
         <h2>Let's work together!</h2>
         <p>I'm a content manager with about 11 years of experience working with companies in the blockchain, logistics, healthcare, and marketing industries, among many others.</p>
-
+        
         <h2>Expertise</h2>
         <p>Copywriting, SEO, Content Strategy, Email Marketing, Project Management</p>
-
+        
         <h2>Work I'm most proud of</h2>
         <p>Ghostwriting a book for a motivational speaker</p>
-
+        
         <h2>Languages:</h2>
         <p>English and Filipino</p>
       </div>
       <div class="contact-info">
         <h2>Reach out</h2>
         <p>Email: <a href="mailto:patzhisugan@gmail.com">patzhisugan@gmail.com</a></p>
-        <p>Whatsapp: <a href="https://wa.me/639279813428">+639279813428</a></p>
+        <p>WhatsApp: <a href="https://wa.me/639279813428">+639279813428</a></p>
       </div>
     </div>
+    <div class="footer">&copy; 2025 Patricia April Hisugan. All rights reserved.</div>
   </body>
 </html>
